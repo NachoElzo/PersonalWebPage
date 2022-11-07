@@ -1,0 +1,31 @@
+
+body{
+
+    background-color: lightsteelblue;
+}
+
+h3 {
+    color: blue;
+}
+
+#profile-1:hover{
+    
+    border-radius: 30%;
+}
+
+/* misma caja en la misma linea */
+#displayBox {
+    background-color: red;
+    display:inline-block;
+    margin-block-end: 10px;
+    position: relative;
+}
+span {
+
+    display: inline-block;
+
+}
+
+ #imgInicio {
+    inline-size: 5%; 
+}
