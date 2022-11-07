@@ -1,6 +1,5 @@
 
 body{
-
     background-color: lightsteelblue;
 }
 
@@ -28,4 +27,17 @@ span {
 
  #imgInicio {
     inline-size: 5%; 
+}
+
+.contentbox{
+    margin-left: 20px;
+}
+
+.tables{
+    margin-left: 20px;
+
+}
+
+.topContent {
+    margin-left: 20px;
 }
