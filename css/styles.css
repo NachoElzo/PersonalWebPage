@@ -1,41 +1,57 @@
+#personalInformation {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Fragment Mono', monospace;
+    margin-left: 35%;
 
-body{
-    background-color: lightsteelblue;
+}
+
+
+#profile-img {
+    margin-left: 40%;
+    margin-bottom: 80px;
+    width: 13em;
+    height: 16em;
+
+}
+
+.textContainer {
+    font-family: 'Fragment Mono', monospace;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#homeLink {
+    width: 3em;
+    height: 3em;
+}
+
+body {
     background-size: cover;
+    font-family: 'Fragment Mono', monospace;
 }
 
-h3 {
-    color: blue;
-}
-
-#profile-1:hover{
-    
-    border-radius: 30%;
-}
 
 /* misma caja en la misma linea */
 #displayBox {
     background-color: red;
-    display:inline-block;
+    display: inline-block;
     margin-block-end: 10px;
     position: relative;
 }
+
 span {
 
     display: inline-block;
 
 }
 
- #imgInicio {
-    inline-size: 5%; 
-}
-
-.contentbox{
+.contentbox {
     margin-left: 20px;
 }
 
-.tables{
-    margin-left: 20px; 
+.tables {
+    margin-left: 20px;
     margin-left: 42%;
 
 }
