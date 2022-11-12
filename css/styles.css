@@ -2,14 +2,15 @@
     margin-top: 30px;
     margin-bottom: 30px;
     font-family: 'Fragment Mono', monospace;
-    margin-left: 35%;
+    text-align: center;
+    color:rgb(201, 201, 201);
 
 }
 
-
+                        
 #profile-img {
     background-color:#212529 ;
-    margin-left: 40%;
+    margin-left: 43%;
     margin-bottom: 80px;
     width: 13em;
     height: 16em;
@@ -18,24 +19,45 @@
 
 .textContainer {
     font-family: 'Fragment Mono', monospace;
-    margin-left: 20px;
+    margin-left: 10%;
+    margin-right: 35%;
     margin-bottom: 50px;
+    color:rgb(201, 201, 201);
+}
+
+ #techLabel {
+
+    font-family: 'Fragment Mono', monospace;
+    margin-left: 30%;
+    margin-right: 35%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color:rgb(201, 201, 201);
 }
 
 #homeLink {
+    margin-bottom: 10px;
     width: 3em;
     height: 3em;
 }
 
 #skillsContaiiner {
     background-color:#212529;
-    position: relative;  
+    position: relative;
 }
 
 .skillsImg {
-    width: 2em;
-    height: 2em;
-    margin-bottom: 40px;
+    width: 3em;
+    height: 3em;
+    /* top,left, bottom */
+    margin: 00px 10px 40px;
+}
+
+#carouselCode{
+    margin-top: 50px;
+    width: 13em;
+    height: 16em;
+    margin-left: 45%;
 }
 
 body {

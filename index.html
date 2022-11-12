@@ -24,8 +24,9 @@
 
 
 <!-- TOP MENU -->
+
 <body background="background.png">
-  <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-light bg-light navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +68,8 @@
               Download
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./downloadable/Jose Ignacio ElzoEnglish.pdf" download="Jose Ignacio ElzoEnglish.pdf">My resume</a></li>
+              <li><a class="dropdown-item" href="./downloadable/Jose Ignacio ElzoEnglish.pdf"
+                  download="Jose Ignacio ElzoEnglish.pdf">My resume</a></li>
             </ul>
           </li>
         </ul>
@@ -78,35 +80,52 @@
   <!-- PERSONAL INFORMATION -->
   <div class="container" id="personalInformation">
     <h2>Personal Repository</h2>
-    <h3 style="margin-left: 12%;"><em>by</em></h3>
+    <h3><em>by</em></h3>
     <h2><strong>Jose Ignacio Elzo</strong></h2>
   </div>
 
   <!-- PROFILE PICTURE -->
 
-  <img id='profile-img' src="./img/miscellaneous/profile.png" alt="Jose Ignacio Elzo Profile "/>
+  <img id='profile-img' src="./img/miscellaneous/profile.png" alt="Jose Ignacio Elzo Profile " />
 
   <!-- container-fluid expande al 100% del ancho -->
-  <div class ="textContainer">
-  <h2>Work Experience</h2>
-  <p>Computer Systems Engineering with more than eight years of work experience, my human, academic and vocational
-    training has been focused on the development and implementation of useful proposals in analysis, design, improving
-    internal processes, quality assurance on software products and management projects.
-    leadership skills to improve performance and camaraderie on QA teams.
-    I am a positive person, creative, easy to adapt to new work teams, with a strong level of commitment and
-    responsibility
-    to my duties, good interpersonal skills, ability to work in teams under high pressure and goal oriented.</p>
+  <div class="textContainer">
+    <h2>Work Experience</h2>
+    <p>Computer Systems Engineering with more than eight years of work experience, my human, academic and vocational
+      training has been focused on the development and implementation of useful proposals in analysis, design, improving
+      internal processes, quality assurance on software products and management projects.
+      leadership skills to improve performance and camaraderie on QA teams.
+      I am a positive person, creative, easy to adapt to new work teams, with a strong level of commitment and
+      responsibility
+      to my duties, good interpersonal skills, ability to work in teams under high pressure and goal oriented.</p>
   </div>
-  
-   <!-- SKILLS TABLE-->
-   <div class="container-fluid" id="skillsContaiiner">
-      <h4 style="color:rgb(188, 183, 183)">Automation</h4>
-    <p></p>
-    <img class="skillsImg" src="./img/codeSkills/webdriverio-logo.png" alt="webdriverio-logo.png">
-    <img class="skillsImg" src="./img/codeSkills/html5.png" alt="html5.png">
-    <img class="skillsImg" src="./img/codeSkills/css.png" alt="css.png">
-    <img class="skillsImg" src="./img/codeSkills/js.png" alt="js.png">
-   </div>
+
+  <h2 id="techLabel">technologies:</h2>
+
+  <div id="carouselCode" class="carousel carousel-light slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/codeSkills/webdriverio-logo.png" class="d-block w-100" alt="webdriverio-logo.png">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/codeSkills/html5.png" class="d-block w-100" alt="html5.png">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/codeSkills/css.png" class="d-block w-100" alt="css.png">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/codeSkills/js.png" class="d-block w-100" alt="js.png">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCode" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCode" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 </body>
 
