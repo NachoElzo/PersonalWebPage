@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Repositorio Personal</title>
+  <title>Jose Elzo QA Engineer</title>
   <link rel="stylesheet" href="css/styles.css">
   <!-- icons in your page sheet -->
   <link rel="icon" href="favicon.ico">
@@ -20,11 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet">
 </head>
-
-
-
 <!-- TOP MENU -->
-
 <body background="background.png">
   <nav class="navbar navbar-light bg-light navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -35,7 +31,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link inactive" aria-current="page" href="#workExperience">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link inactive" aria-current="page" href="#programmingTechnologies">Technologies</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,6 +55,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="./webTips.html">html</a></li>
+              <li><a class="dropdown-item" href="./javaScript.html">javaScript</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -78,14 +81,17 @@
   </nav>
 
   <!-- PERSONAL INFORMATION -->
+
+  <section id ="personalInformation">
   <div class="container" id="personalInformation">
     <h2>Personal Repository</h2>
     <h3><em>by</em></h3>
     <h2><strong>Jose Ignacio Elzo</strong></h2>
   </div>
+</section>
 
   <!-- PROFILE PICTURE -->
-
+<section id="workExperience">
   <img id='profile-img' src="./img/miscellaneous/profile.png" alt="Jose Ignacio Elzo Profile " />
 
   <!-- container-fluid expande al 100% del ancho -->
@@ -99,6 +105,10 @@
       responsibility
       to my duties, good interpersonal skills, ability to work in teams under high pressure and goal oriented.</p>
   </div>
+</section>
+
+
+<section id="programmingTechnologies">
 
   <div id="techLabel">
     <h2> Programming Lenguages</h2>
@@ -113,9 +123,6 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="./img/codeSkills/wdio.png" class="d-block w-100" alt="wdio.png">
-      </div>
-      <div class="carousel-item">
-        <img src="./img/codeSkills/appium.png" class="d-block w-100" alt="appium.png">
       </div>
       <div class="carousel-item">
         <img src="./img/codeSkills/cypress.png" class="d-block w-100" alt="cypress.png">
@@ -139,6 +146,8 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+</section>
 
 </body>
 
