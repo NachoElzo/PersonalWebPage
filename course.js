@@ -1,5 +1,9 @@
 const prompt = require("prompt-sync")();
 
-var message = prompt("enter a message ")
-var messageCount = message.length
-console.log("el total de tu mensaje es de : " + messageCount + " letras" +  ", te quedan: " + (150 - messageCount))
+var name = prompt("Hello, enter you name: ")
+//var messageCount = message.length
+var firstL = name.slice(0,1)
+var fToUpper = firstL.toUpperCase()
+var rname = name.slice(1,15)
+var rtoLower = rname.toLocaleLowerCase ()
+console.log("Hello " + fToUpper + rtoLower)
