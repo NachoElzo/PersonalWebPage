@@ -61,6 +61,16 @@
     margin-left: 42%;
 }
 
+#contactMe{
+
+    margin-top: 70px;
+    width: 30px;
+    height: 7em;
+    margin-left: 42%;
+    position: absolute;
+}
+
+
 body {
     background-size: cover;
     font-family: 'Fragment Mono', monospace;
