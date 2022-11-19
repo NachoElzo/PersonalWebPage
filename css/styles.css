@@ -1,5 +1,5 @@
 #personalInformation {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
     font-family: 'Fragment Mono', monospace;
     text-align: center;
@@ -11,7 +11,7 @@
 #profile-img {
     background-color:#212529 ;
     margin-left: 43%;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     width: 13em;
     height: 16em;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -23,7 +23,7 @@
     font-family: 'Fragment Mono', monospace;
     margin-left: 10%;
     margin-right: 35%;
-    margin-bottom: 50px;
+    margin-top: 80px;
     color:rgb(201, 201, 201);
 }
 
@@ -32,7 +32,6 @@
     font-family: 'Fragment Mono', monospace;
     margin-left: 34%;
     margin-bottom: 10px;
-    margin-top: 90px;
     color:rgb(201, 201, 201);
 }
 
@@ -43,29 +42,45 @@
 }
 
 #skillsContaiiner {
+
+    margin-top: 10px;
     background-color:#212529;
-    position: relative;
+
 }
 
 .skillsImg {
     width: 3em;
     height: 3em;
     /* top,left&right, bottom */
-    margin: 00px 10px 40px;
+    margin: 00px 10px 30px;
 }
 
 #carouselCode{
-    margin-top: 70px;
+    margin-top: 20px;
     width: 13em;
     height: 16em;
     margin-left: 42%;
 }
 
+#contactMe { 
+    margin-top: 150px ;
+    margin-bottom: 50px;
+}
 
-.contactMe{
-    margin-top: 200pxpx;
-    width: 13em;
-    height: 16em;  
+#linkedin{
+    margin-left: 10px;  
+
+}
+
+#email{
+
+    margin-left: 15px;
+
+}
+
+#arrow{
+    width: 3em;
+    height: 10em;
 }
 
 
