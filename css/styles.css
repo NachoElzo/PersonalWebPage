@@ -23,7 +23,7 @@
     font-family: 'Fragment Mono', monospace;
     margin-left: 10%;
     margin-right: 35%;
-    margin-top: 80px;
+    margin-top: 50px;
     color:rgb(201, 201, 201);
 }
 
@@ -52,7 +52,7 @@
     width: 3em;
     height: 3em;
     /* top,left&right, bottom */
-    margin: 00px 10px 30px;
+    margin: 00px 10px 25px;
 }
 
 #carouselCode{
@@ -63,8 +63,9 @@
 }
 
 #contactMe { 
-    margin-top: 150px ;
-    margin-bottom: 50px;
+    margin-left:20px;
+    margin-top: 20px ;
+    margin-bottom: 20px;
 }
 
 #linkedin{
@@ -79,6 +80,7 @@
 }
 
 #arrow{
+    margin-left: 20px;
     width: 3em;
     height: 10em;
 }
