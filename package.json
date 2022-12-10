@@ -18,5 +18,8 @@
   "homepage": "https://github.com/NachoElzo/PersonalWebPage#readme",
   "dependencies": {
     "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^8.0.9"
   }
 }

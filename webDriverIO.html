@@ -32,6 +32,7 @@
             <dd>- nvm use 16-- use node version 16</dd>
             <dd>- nvm list-- list of node version installed</dd>
             <dd>- node -v-- node version active</dd>
+            <dd>- default version of node: nvm alias default version</dd>
             <dt>Install brew</dt>
             <dd>- <a href="https://brew.sh/index_es">install brew</a></dd>
             <dt>install java (brew creates java_home automatically)</dt>
@@ -54,15 +55,38 @@
             <dt>install xcuit test (driver for ios)</dt>
             <dd>check drivers installed: appium driver list</dd>
             <dd>install xcuit: appium driver install xcuitest</dd>
-            <dt>create and configure your project</dt>
+            <!-- PROJECT SETINGS SECTION -->
+            
+            <dt>create and configure your project (change configuration depending on the type of project)</dt>
             <dd>inside your project folder type: npm init</dd>
             <dd>follow npm instruction inside the console</dd>
             <dd><a href="https://webdriver.io/docs/gettingstarted/">wdio documentation</a></dd>
-            <dd>install wdio: npm install @wdio/cli</dd>
-            <dd>create wdio config file: npx wdio config</dd>
+            <dd>install wdio: npm init wdio .</dd>
+            <!-- <dd>create wdio config file: npx wdio config</dd> -->
             <dd>for this tutorial use the following config</dd>
             <img src="./img/wdioProjectConfig.png" alt="wdioProjectConfig.png">
+            <dd>Make sure that in your wdio conf file is in the main path, inside the file, runner section, the config file should be the same path</dd>
+            <img src="./img/runnerPath.png" alt="runnerPath.png">
 
+            <dd>make sure that you have the following structure for cucumber test</dd>
+            <img src="./img/WDIOFileStructure.png" alt="wdioProjectConfig.png">
+            <dd>in the wdio config file, specs should have the path in where the features file will be executed</dd>
+            <img src="./img/specs.png" alt="specs.png">
+            <dd>in cucumber options add the path in where the steps definition file will be executed</dd>
+            <img src="./img/cucumberStepDefinitionPath.png" alt="cucumberStepDefinitionPath.png">
+           <dt>to handle different plugins add a helper folder inside the test folder</dt>
+           <dd>add a demo folder inside test in order to debug feature files</dd>
+           <dd>add a page-object folder inside test for get the page elements</dd>
+           <dd>create a config folder in the main path to add more than one configuration to run different environments</dd>
+           <dd>create a data folder in the main path to store different data</dd>
+           <dd>create a debug folder in the main path to handled isolated  debugs from the project</dd>
+           <dd>create a logs folder in the main path</dd>
+           <dd>a folder result in the main path to get all the test results (you can compare ir with expected folder or values)</dd>
+           <dd>in the main path create .env file to handled secrets and credentials</dd>
+
+            
+
+       
 
         </dl>
     </ul>
