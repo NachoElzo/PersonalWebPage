@@ -150,3 +150,10 @@ margin-left: 10px;
 dd,dt {
     color:rgb(201, 201, 201);
 }
+
+.halfsizePicture {
+    margin-top: 20px;
+    width: 20em;
+    height: 20em;
+    margin-left: 10px;
+}

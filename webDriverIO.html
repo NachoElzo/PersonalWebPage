@@ -68,14 +68,14 @@
             <dd>Make sure that in your wdio conf file is in the main path, inside the file, runner section, the config file should be the same path</dd>
             <img src="./img/runnerPath.png" alt="runnerPath.png">
 
-            <dd>make sure that you have the following structure for cucumber test</dd>
+            <dd>make sure that you have the following structure for cucumber test, test/step-definitions</dd>
             <img src="./img/WDIOFileStructure.png" alt="wdioProjectConfig.png">
             <dd>in the wdio config file, specs should have the path in where the features file will be executed</dd>
             <img src="./img/specs.png" alt="specs.png">
             <dd>in cucumber options add the path in where the steps definition file will be executed</dd>
             <img src="./img/cucumberStepDefinitionPath.png" alt="cucumberStepDefinitionPath.png">
            <dt>to handle different plugins add a helper folder inside the test folder</dt>
-           <dd>add a demo folder inside test in order to debug feature files</dd>
+           <dd>add a demo folder/step-definitions inside test in order to debug feature filess</dd>
            <dd>add a page-object folder inside test for get the page elements</dd>
            <dd>create a config folder in the main path to add more than one configuration to run different environments</dd>
            <dd>create a data folder in the main path to store different data</dd>
@@ -83,11 +83,26 @@
            <dd>create a logs folder in the main path</dd>
            <dd>a folder result in the main path to get all the test results (you can compare ir with expected folder or values)</dd>
            <dd>in the main path create .env file to handled secrets and credentials</dd>
-
-            
-
-       
-
+            <h3>
+                Common issues
+            </h3>
+            <p>Make sure that your browser version matches with the package.json file version</p>
+            <img src="./img/browserVersion.png" alt="browserVersion.png">
+            <h3>In order to fix the erro code 65 from appium when you are connecting </h3>
+            <p>go to appium in the aplication folder </p>
+            <p>with right button "Show package content"</p>
+            <img class="halfsizePicture" src="./img/appiumPath.png" alt="appiumPath.png">
+            <p>follow the following path  content/resource/app/node_modules/appium/node_modules/appium-webdriveragent</p>
+            <p>download the last version of the webDriverAgent and the runner.zip(keep the file in zip, do not unzip)</p>
+            <a href="https://github.com/appium/WebDriverAgent/releases">webDriverAgent and runner</a>
+            <p>replace the files content and replace it in the appium-webdriveragent folder</p>
+            <h3>Desire capabilities for appium in iOS</h3>
+            <img class="halfsizePicture" src="./img/desire-iOScapabilities.png" alt="desire-iOScapabilities.png"">
+            <p>in xcode project properties you can find the bundle identifier capability</p>
+            <img class="display-large-pictures" src="./img/bundleIdentifier.png" alt="bundleIdentifier.png">
+            <p>in xcode, windows, devices and simulator option you can find the appium udid capability selecting the emulator used</p>
+            <img class="display-large-pictures" src="./img/device-udid.png" alt="device-udid.png">
+            <img class="display-large-pictures" src="./img/udidDevice.png" alt="udidDevice.png">
         </dl>
     </ul>
 
