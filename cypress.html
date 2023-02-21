@@ -36,6 +36,22 @@
 <p>script for run your project</p>
 <img src="./img/cyConsoleRun.png" alt="cyConsoleRun.png">
 <p>to run execute in the project path: npm run cy.chrome </p>
+<h3>xpath pluggin</h3>
+<a href="https://www.npmjs.com/package/@cypress/xpath">Documentation</a>
+<p>inside you project: npm install -D @cypress/xpath</p>
+<p>Then include in your project's support  e2e.js file: require('@cypress/xpath');</p>
+<p>usage: cy.xpath('//body')</p>
+<h3>Tips</h3>
+ <ul>
+ <h3>Filters allows you to filter an element by an state </h3>
+    <li>enabled</li>
+    <li>disabked</li>
+    <li>checked</li>
+    <li>empty</li>
+    <li>visible</li>
+    <li>Add ":filterName" inside the path of a locator</li>
+    <li>Usage example: cy.get(['checkbox':checked) </li>
+ </ul>
 </body>
 
 </html>
