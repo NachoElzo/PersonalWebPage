@@ -6,30 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </head>
 
 <body background="./img/reusable/background.png">
-    <a title="Inicio" href="./index.html"> <img src="img/reusable/inicio.png" alt="Inicio" id="homeLink"/></a>
+    <a title="Inicio" href="./index.html"> <img src="img/reusable/inicio.png" alt="Inicio" id="homeLink" /></a>
     <h3>Cypress installation</h3>
-    <ul class="PreConditions">Pre-conditions</ul>
+    <p></p>
+    <h4>Pre-conditions</h4>
     <!-- como linkear una seccion de una pagina -->
-    
-    <li>Node version manager NVM <a href="./apps&plugins.html#li">here</a></li>
-    <li>Open a terminal in you project folder</li>
-    <li>npm init</li>
-    <li>Install cypress --> npm install cypress --save-dev</li>
-    <li>Check cypress version --> npm cypress -version</li>
-    <li>Open cypress (inside your project) --> npx cypress open</li>
-    <li>Once cypress is open, select e2e testing, continue</li>
-    <li>Test cases folder --> e2e</li>
-    <li>Cypress test cases extensions --> cy.js</li>
-    <li><a href="https://docs.cypress.io/guides/overview/why-cypress">Cypress documentation</a></li>
-    <li>Download cypress snippets for visual code</li>
+    <ul>
+        <li>Node version manager NVM <a href="./apps&plugins.html#li">here</a></li>
+        <li>Open a terminal in you project folder</li>
+        <li>npm init</li>
+        <li>Install cypress --> npm install cypress --save-dev</li>
+        <li>Check cypress version --> npm cypress -version</li>
+        <li>Open cypress (inside your project) --> npx cypress open</li>
+        <li>Once cypress is open, select e2e testing, continue</li>
+        <li>Test cases folder --> e2e</li>
+        <li>Cypress test cases extensions --> cy.js</li>
+        <li><a href="https://docs.cypress.io/guides/overview/why-cypress">Cypress documentation</a></li>
+        <li>Download cypress snippets for visual code</li>
+    </ul>
     <p></p>
 
-    <h3>In order to update cypress</h3>
+    <h4>In order to update cypress</h4>
     <ul>
         <li>Open cypress project</li>
         <li>inside the project, search for the promp update</li>
@@ -37,30 +42,31 @@
         <li>script example: npm install -D cypress@12.12.0</li>
     </ul>
     <p></p>
-<h3>Cypress files structure</h3>
-<p></p>
-<img class = "display-50"src="./img/cypressExtructure.png" alt="cypressExtructure.png">
-<p><strong> e2e.js file, works for inherit object or flows</strong></p>
-<h3>Usefull scripts for your project in the package.json file </h3>
-<p>script for run your project</p>
-<img src="./img/cypressScriptsForRun.png" alt="cyConsoleRun.png">
-<p>to run execute in the project path: npm run cy.chrome </p>
-<h3>xpath pluggin</h3>
-<a href="https://www.npmjs.com/package/@cypress/xpath">Documentation</a>
-<p>inside you project: npm install -D @cypress/xpath</p>
-<p>Then include in your project, folder support, file e2e.js: file: require('@cypress/xpath');</p>
-<p>usage: cy.xpath('//body')</p>
-<h3>Tips</h3>
- <ul>
- <h3>Filters allows you to filter an element by an state </h3>
-    <li>enabled</li>
-    <li>disabked</li>
-    <li>checked</li>
-    <li>empty</li>
-    <li>visible</li>
-    <li>Add ":filterName" inside the path of a locator</li>
-    <li>Usage example: cy.get(['checkbox':checked) </li>
- </ul>
+    <h4>Cypress files structure</h4>
+    <img class="display-50" src="./img/cypressExtructure.png" alt="cypressExtructure.png">
+    <p></p>
+    <p><strong> e2e.js file, works for inherit object or flows</strong></p>
+    <h4>Usefull scripts for your project in the package.json file </h4>
+    <img class="display-50" src="./img/cypressScriptsForRun.png" alt="cyConsoleRun.png">
+    <p>To run execute in the project path: npm run cy.chrome </p>
+    <h3>xpath pluggin</h3>
+    <a href="https://www.npmjs.com/package/@cypress/xpath">Documentation</a>
+    <ul>
+        <li>inside you project: npm install -D @cypress/xpath</li>
+        <li>Then include in your project, folder support, file e2e.js: file: require('@cypress/xpath');</li>
+        <li>usage: cy.xpath('//body')</li>
+    </ul>
+    <h4>Tips</h4>
+    <h5>Filters allows you to filter an element by an state </h5>
+    <ul>
+        <li>enabled</li>
+        <li>disabked</li>
+        <li>checked</li>
+        <li>empty</li>
+        <li>visible</li>
+        <li>Add ":filterName" inside the path of a locator</li>
+        <li>Usage example: cy.get(['checkbox':checked) </li>
+    </ul>
 </body>
 
 </html>
