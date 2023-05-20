@@ -137,6 +137,14 @@ li {
     margin-top:  200px;
 }
 
+
+.display-20P
+{
+    width: 20%;
+    height: 20%
+}
+
+
 .display-50
 {
    margin-top: 20px;
@@ -144,6 +152,31 @@ li {
     width:30em;
     height: 30em;
 }
+
+.display-25-35-tall
+{
+   margin-top: 20px;
+   margin-left: 30px;
+    width: 25em;
+    height: 35em;
+}
+
+.display-50-25-large
+{
+   margin-top: 20px;
+   margin-left: 30px;
+    width: 50em;
+    height: 25em;
+}
+
+.display-50-35-large
+{
+   margin-top: 20px;
+   margin-left: 30px;
+    width: 50em;
+    height: 35em;
+}
+
 
 .display-large-pictures
 {

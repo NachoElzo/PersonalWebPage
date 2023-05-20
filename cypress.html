@@ -23,7 +23,7 @@
         <li>Node version manager NVM <a href="./apps&plugins.html#li">here</a></li>
         <li>Open a terminal in you project folder</li>
         <li>npm init</li>
-        <li>Install cypress --> npm install cypress --save-dev</li>
+        <li>Install cypress (inside your project)--> npm install cypress --save-dev</li>
         <li>Check cypress version --> npm cypress -version</li>
         <li>Open cypress (inside your project) --> npx cypress open</li>
         <li>Once cypress is open, select e2e testing, continue</li>
@@ -43,19 +43,36 @@
     </ul>
     <p></p>
     <h4>Cypress files structure</h4>
-    <img class="display-50" src="./img/cypressExtructure.png" alt="cypressExtructure.png">
+    <img  class = "display-25-35-tall" src="./img/cypress/cypressExtructure.png" alt="cypressExtructure.png">
     <p></p>
     <p><strong> e2e.js file, works for inherit object or flows</strong></p>
     <h4>Usefull scripts for your project in the package.json file </h4>
-    <img class="display-50" src="./img/cypressScriptsForRun.png" alt="cyConsoleRun.png">
-    <p>To run execute in the project path: npm run cy.chrome </p>
+    <img class = "display-50-25-large" src="./img/cypress/cypressScriptsForRun.png" alt="cyConsoleRun.png">
+    <p>"scripts": {</p>
+    <p>&#160 "test": "echo \"Error: no test specified\" && exit 1",</p>
+    <p>&#160 "cy.chrome": "cypress run chrome",</p>
+    <p>&#160 "cy.firefox": "cypress run firefox",</p>
+    <p>&#160 "cy.open": "cypress open"</p>
+    <p>},</p>
+    <p>To run execute in the project path: npm run cy.chrome or /firefox/open</p>
     <h3>xpath pluggin</h3>
     <a href="https://www.npmjs.com/package/@cypress/xpath">Documentation</a>
     <ul>
         <li>inside you project: npm install -D @cypress/xpath</li>
-        <li>Then include in your project, folder support, file e2e.js: file: require('@cypress/xpath');</li>
-        <li>usage: cy.xpath('//body')</li>
+        <li>Then include in your project, folder support, file e2e.jsfile: &#160 require('@cypress/xpath');</li>
+        <li>usage: cy.xpath('//body') in the spect file</li>
     </ul>
+    <h4>spec.cy.js file (Test file)</h4>
+    <img class = "display-50-35-large" src="./img/cypress/spec.cy.js file.png" alt="filestructure.png">
+    <h4>
+        Ignore undefinded errors support/e2e.js
+    </h4>
+    <img class = "display-50-25-large" src="./img/cypress/undefinedErrors.png" alt="filestructure.png">
+    <p>cy.on('uncaught:exception', (err, runnable) => {
+    <p>&#160 expect(err.message).to.include('of undefined')</p>
+    <p>&#160 &#160 done()</p>
+    <p>&#160 &#160 return false</p>
+    <p> });</p>
     <h4>Tips</h4>
     <h5>Filters allows you to filter an element by an state </h5>
     <ul>
