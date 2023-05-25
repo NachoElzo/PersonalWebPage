@@ -19,35 +19,36 @@
     <p></p>
     <h4>Pre-conditions</h4>
     <!-- como linkear una seccion de una pagina -->
-    <ul>
+    <ol>
         <li>Node version manager NVM <a href="./apps&plugins.html#li">here</a></li>
         <li>Open a terminal in you project folder</li>
-        <li>npm init</li>
+        <li>type: &#160 npm init</li>
         <li>Install cypress (inside your project)--> npm install cypress --save-dev</li>
         <li>Check cypress version --> npm cypress -version</li>
         <li>Open cypress (inside your project) --> npx cypress open</li>
         <li>Once cypress is open, select e2e testing, continue</li>
         <li>Test cases folder --> e2e</li>
         <li>Cypress test cases extensions --> cy.js</li>
-        <li><a href="https://docs.cypress.io/guides/overview/why-cypress">Cypress documentation</a></li>
-        <li>Download cypress snippets for visual code</li>
-    </ul>
+        <li>Check cypress documentation: &#160 <a href="https://docs.cypress.io/guides/overview/why-cypress">Cypress
+                documentation</a></li>
+        <li>Download cypress snippet for visual code</li>
+    </ol>
     <p></p>
 
     <h4>In order to update cypress</h4>
-    <ul>
+    <ol>
         <li>Open cypress project</li>
         <li>inside the project, search for the promp update</li>
         <li>copy the script, close the project and paste it in the terminal</li>
         <li>script example: npm install -D cypress@12.12.0</li>
-    </ul>
+    </ol>
     <p></p>
     <h4>Cypress files structure</h4>
-    <img  class = "display-25-35-tall" src="./img/cypress/cypressExtructure.png" alt="cypressExtructure.png">
+    <img class="display-35P" src="./img/cypress/cypressExtructure.png" alt="cypressExtructure.png">
     <p></p>
     <p><strong> e2e.js file, works for inherit object or flows</strong></p>
     <h4>Usefull scripts for your project in the package.json file </h4>
-    <img class = "display-50-25-large" src="./img/cypress/cypressScriptsForRun.png" alt="cyConsoleRun.png">
+    <img class="display-50P" src="./img/cypress/cypressScriptsForRun.png" alt="cyConsoleRun.png">
     <p>"scripts": {</p>
     <p>&#160 "test": "echo \"Error: no test specified\" && exit 1",</p>
     <p>&#160 "cy.chrome": "cypress run chrome",</p>
@@ -63,11 +64,11 @@
         <li>usage: cy.xpath('//body') in the spect file</li>
     </ul>
     <h4>spec.cy.js file (Test file)</h4>
-    <img class = "display-50-35-large" src="./img/cypress/spec.cy.js file.png" alt="filestructure.png">
+    <img class="display-50P" src="./img/cypress/spec.cy.js file.png" alt="file.png">
     <h4>
         Ignore undefinded errors support/e2e.js
     </h4>
-    <img class = "display-50-25-large" src="./img/cypress/undefinedErrors.png" alt="filestructure.png">
+    <img class="display-50P" src="./img/cypress/undefinedErrors.png" alt="undefinedErrors.png">
     <p>cy.on('uncaught:exception', (err, runnable) => {
     <p>&#160 expect(err.message).to.include('of undefined')</p>
     <p>&#160 &#160 done()</p>
@@ -81,8 +82,22 @@
         <li>checked</li>
         <li>empty</li>
         <li>visible</li>
-        <li>Add ":filterName" inside the path of a locator</li>
-        <li>Usage example: cy.get(['checkbox':checked) </li>
+        <li>Usage example: &#160 cy.get('.checkbox':checked) </li>
+    </ul>
+    <h5>Usefully assertions</h5>
+    <ul>
+        <li>should.('exist') -> To make sure that the element exist</li>
+        <li>should.('not.exist') -> To make sure that the element do not exist</li>
+        <li>should.('be.checked') -> To make sure that the box or radio button is checked</li>
+        <li>should.('be.disabled') -> To make sure that the element is disabled </li>
+    </ul>
+    <h5>Usefully functions</h5>
+    <ul>
+        <li>cy.log("text for log in the test execution")-> works for write something between the cases</li>
+        <li>.pause() pause the execution after a instruction, for resume click the play in the cypress
+            runner</li>
+        <li>.debug() use after a instruction, this debug information can be reach in the devtools, open it in the
+            devtools from the cypress runner</li>
     </ul>
 </body>
 

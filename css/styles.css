@@ -110,19 +110,12 @@ a {
     margin-left: 10px;
 }
 
-h3 {
+
+h1,h2,h3,h4,h5 {
     margin-left: 10px;
     color:rgb(201, 201, 201);
 }
 
-h4 {
-    margin-left: 10px;
-    color:rgb(201, 201, 201);
-}
-h5 {
-    margin-left: 10px;
-    color:rgb(201, 201, 201);
-}
 
 li {
     color:rgb(201, 201, 201); 
@@ -140,39 +133,62 @@ li {
 
 .display-20P
 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
     width: 20%;
     height: 20%
 }
+.display-35P
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 35%;
+    height: 35%
+}
 
+.display-50P
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 50%;
+    height: 50%
+}
 
 .display-50
 {
-   margin-top: 20px;
-   margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     width:30em;
     height: 30em;
 }
 
 .display-25-35-tall
 {
-   margin-top: 20px;
-   margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     width: 25em;
     height: 35em;
 }
 
 .display-50-25-large
 {
-   margin-top: 20px;
-   margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     width: 50em;
     height: 25em;
 }
 
 .display-50-35-large
 {
-   margin-top: 20px;
-   margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     width: 50em;
     height: 35em;
 }
@@ -180,8 +196,9 @@ li {
 
 .display-large-pictures
 {
-   margin-top: 50px;
-   margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     width: 40em;
     height: 12em;
 }
