@@ -90,6 +90,7 @@
         <li>should.('not.exist') -> To make sure that the element do not exist</li>
         <li>should.('be.checked') -> To make sure that the box or radio button is checked</li>
         <li>should.('be.disabled') -> To make sure that the element is disabled </li>
+        <li>.should('have.text','textElement')-> Search for the text of the element</li>
     </ul>
     <h5>Usefully functions</h5>
     <ul>
@@ -98,6 +99,24 @@
             runner</li>
         <li>.debug() use after a instruction, this debug information can be reach in the devtools, open it in the
             devtools from the cypress runner</li>
+        <li>You can use alias to objects in order to call it in another cases</li>
+        <li>You can wait in milliseconds for a control with cy.wait(1000)</li>
+        <li>In order to avoid cases with multiple tabs in one flow use: &#160 .invoke('removeAttr', 'target')</li>
+    </ul>
+    <h3>most used command in cypress</h3>
+    <ul>
+        <li>.check() -> click on a checkbox</li>
+        <li>.uncheck() -> unclick on a checkbox</li>
+        <li>.select('objectText') -> selects a item from a dropdown list</li>
+        <li>.select('1') -> selects the position of an item from a dropdown list (starts from 1)</li>
+        <li>.clear() -> clear the text that you previously sent</li>
+        <li>.click({force: true}) -> forces a click even if the element is hidden</li>
+        <li>.rightclick() -> press the right mouse button on a element</li>
+        <li>.invoke("trigger,contextmenu") -> triggers a pop up, context menu</li>
+        <li>cy.on("window:alert",(alert) =>{
+            expect(alert).to.equal("AlertMessage")
+        })</li>
+
     </ul>
 </body>
 
