@@ -48,6 +48,7 @@
     <p></p>
     <p><strong> e2e.js file, works for inherit object or flows</strong></p>
     <h4>Usefull scripts for your project in the package.json file </h4>
+    <h5>In order to extecute cypress with your own command</h5>
     <img class="display-50P" src="./img/cypress/cypressScriptsForRun.png" alt="cyConsoleRun.png">
     <p>"scripts": {</p>
     <p>&#160 "test": "echo \"Error: no test specified\" && exit 1",</p>
@@ -69,11 +70,11 @@
         Ignore undefinded errors support/e2e.js
     </h4>
     <img class="display-50P" src="./img/cypress/undefinedErrors.png" alt="undefinedErrors.png">
-    <p>cy.on('uncaught:exception', (err, runnable) => {
-    <p>&#160 expect(err.message).to.include('of undefined')</p>
-    <p>&#160 &#160 done()</p>
+    <p>Cypress.on('uncaught:exception', (err, runnable) => {
+    <p>// returning false here prevents Cypress from failing the test</p>
     <p>&#160 &#160 return false</p>
     <p> });</p>
+
     <h4>Tips</h4>
     <h5>Filters allows you to filter an element by an state </h5>
     <ul>
@@ -115,7 +116,14 @@
         <li>.invoke("trigger,contextmenu") -> triggers a pop up, context menu</li>
         <li>cy.on("window:alert",(alert) =>{
             expect(alert).to.equal("AlertMessage")
-        })</li>
+            })</li>
+    </ul>
+    <h3>Validations</h3>
+    <ul>
+        <li>You can add an and to a validation for validate more than one parameter</li>
+        <li>Implicit validation .should()</li>
+        <li>Explicit validation expect().to.equals()</li>
+        <img class="display-50P" src="./img/cypress/ImplicitExplicitAssertions.png" alt="validationss.png">
 
     </ul>
 </body>
