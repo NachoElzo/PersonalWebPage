@@ -128,7 +128,7 @@
         <img class="display-50P" src="./img/postman/DuplicateEnvironmentVariables.png" alt="duplicateVariables">
         <li>Make sure that you are changing the environment before run</li>
         <img class="display-20P" src="./img/postman/changeEnvironment.png" alt="ChangeThe environment">
-
+        </ul>
         <h3>Test</h3>
         <ul>
             <li>You can add test validations in the request with JS, there are some snippets created that you can use
@@ -162,5 +162,26 @@
             <li>As you can see in the console you can see more information and the response body</li>
             <img class="display-50P" src="./img/postman/consoleResponsejsonInformation.png" alt="jsonInfo">
         </ul>
+        <h3>Handy validations for variables in a request (make sure that the variable or values is on the request)</h3>
+        <img class="display-50P" src="./img/postman/variableValidations.png" alt="variablesvalidations">
     </ul>
+    <h3>Authentication</h3>
+    
+    <ul>
+        <li>You can create variables for authentication token and save it in collections, folders and requests level
+        </li>
+        <img class="display-35P" src="./img/postman/variablesToken.png" alt="tokenVariables">
+        <li>You can use the token variable in the authentication field</li>
+        <img class="display-50P" src="./img/postman/saveTokenVariable.png" alt="tokenVariables">
+    </ul>
+    
+    <h3>How to automatize a token response in a variable</h3>
+    <ol>
+        <li>Create a request that gets the token</li>
+        <li>set a global variable in the test tab that store the response</li>
+        <img class="display-50P" src="./img/postman/variableForSaveToken.png" alt="tokenVar">
+        <img class="display-50P" src="./img/postman/TokenBodyResponse.png" alt="bodyTokenResponse">
+        <li>Use the global variable in the header that needs authorization</li>
+        <img class="display-50P" src="./img/postman/useTheTokenVariable.png" alt="tokenVar">
+    </ol>
 </body>
