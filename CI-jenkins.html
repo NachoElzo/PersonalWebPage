@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</head>
+
+<body background="./img/reusable/background.png">
+    <a title="Inicio" href="./index.html"> <img src="img/reusable/inicio.png" alt="Inicio" id="homeLink" /></a>
+    <h3>Jenkins</h3>
+    <p></p>
+    <h4>Pre-conditions to install</h4>
+    <ul>
+        <li>Install Jenkins<a href="https://www.jenkins.io/">here</a></li>
+        <li>Install brew command, execute: brew install jenkins-lts</li>
+        <h5>Jenkins commands</h5>
+        <li>Start the Jenkins service: brew services start jenkins-lts</li>
+        <li>Restart the Jenkins service: brew services restart jenkins-lts</li>
+        <li>Update the Jenkins version: brew upgrade jenkins-lts</li>
+        <li>stop jenkins services: brew services stop jenkins-lts </li>
+
+    </ul>
+    <ul>
+        <h3>How to use it</h3>
+        <li>brew services start jenkins-lts</li>
+        <li>navigate to the 8080<a href="http://localhost:8080">here</a></li>
+        <li>You will see jenkins home page</li>
+        <li>search for the path displayed in the screen an copy and paste the key</li>
+        <li>install suggested plugins</li>
+        <li>create an admin user</li>
+    </ul>
+    <h4>Install dependencies for your project</h4>
+    <ul>
+        <li>go to the left menu manage jenkins</li>
+        <li>select tools</li>
+    </ul>
+    <h4>Pluggins for running projects</h4>
+    <ul>
+        <li>jenkinsfile Support (suppot code for vs code)</li>
+        <li>Git pluggin</li>
+        <li>nodeJS</li>
+        <li>ansiColor (avoid special characters in the console results)</li>
+        <li>HTML Publisher plugin (html report for execution)</li>
+    </ul>
+    <h4>Configure a free style for a cypress project</h4>
+    <ul>
+
+        <li>left menu/ new item</li>
+        <li>add a name to a free style project</li>
+        <li>In Genral options start to fill the project configurations parameters</li>
+        <li>general section/advance</li>
+        <li>check the box use custom workspace (path of you cypress project (path in where your project will be allocated after each jenkins execution), use pwd in mac inside your cypress project)</li>
+        <li>check the box gitHub project and add the url of your repository (you execution will run and clone this repo)</li>
+        <img class="display-50P" src="./img/jenkins/generalexecutionoption.png" alt="general">
+        <li>add a name for display name ands save</li>
+        <li>if you dont have nodeJS pluggin installed and configured</li>
+        <li>install nod js pluggin in manage jenkins/plugins/ -> search for nodeJS plugin and install</li>
+        <li>in dashboard/manage section select tools add a nodejs setting</li>
+        <img class="display-50P" src="./img/jenkins/nodeConfigurationPlugin.png" alt="nodePlugin">
+        <li>Go to you jenkins project and configure settings</li>
+        <li>In build environment check Provide Node & npm bin/ folder to PATH</li>
+        <li>Select the node configuration previously setted</li>
+        <li>leave the other parameters by default</li>
+        <img class="display-50P" src="./img/jenkins/nodeEnvironment.png" alt="buildEnvironment">
+        <li>In build stepts section add execute shell</li>
+        <li>add the npm command that you have in your script from your package.jsonfile to execute you cypress project </li>
+        <img class="display-50P" src="./img/jenkins/buildStepsts.png" alt="buildStepts">
+        <li>now you are able to execute your local cypress project</li>
+    </ul>
+    <p></p>
+    <h4>Additional handy configurations</h4>
+    <h5>add multiple executions option to your project</h5>
+    <ul>
+        <li>go to you project options/general -> check This project is parameterized</li>
+        <li>add parameter/choice parameter</li>
+        <li>add a name example scrips</li>
+        <li>add your scrips that you have in package.json cypress project</li>
+        <img class="display-50P" src="./img/jenkins/cypressScripts.png" alt="cypressScripts">
+        <img class="display-50P" src="./img/jenkins/scriptParameters.png" alt="scriptParameters">
+        <li>in build stepsts (execute shell), add npm run %parameterChoiseName% -> (name added in the choice parameter option for your scripts)</li>
+        <li>after save you will see in build with parameters your scripts</li>
+        <img class="display-50P" src="./img/jenkins/buildWithParameters.png" alt="buildParameters">
+    </ul>
+    <h4>avoid special characters in your log</h4>
+    <ul>
+        <li>install ansiColor plugin in manage jenkins/plugins/available plugins</li>
+        <li>go to you jenkins project configuration/build environment</li>
+        <li>check the option Color ANSI Console Output</li>
+        <img class="display-50P" src="./img/jenkins/avoidSpecialCharacterscoloransi.png" alt="coloransi">
+    </ul>
+
+    <h4>install Publisher html report plugin</h4>
+    <ul>
+        <li>install HTML publisher plugin in manage jenkins/plugins/available plugins</li>
+        <li>go to you jenkins project configuration/Post-build Actions section</li>
+        <li>select publish HTML reports</li>
+        <li>select add</li>
+        <img class="display-50P" src="./img/jenkins/reportHTMLparameters.png" alt="HTMLreport">
+        <li>**To avoid execution issue, create a empty index.js file inside the report folder</li>
+        <img class="display-20P" src="./img/jenkins/htmlissuefile.png" alt="HTMLreport">
+    </ul>
+</body>
+
+</html>

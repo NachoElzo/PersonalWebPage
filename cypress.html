@@ -22,7 +22,7 @@
     <ol>
         <li>Node version manager NVM <a href="./apps&plugins.html#li">here</a></li>
         <li>Open a terminal in you project folder</li>
-        <li>type: &#160 npm init</li>
+        <li>type: &#160 npm init and complet the require fields</li>
         <li>Install cypress (inside your project)--> npm install cypress --save-dev</li>
         <li>Check cypress version --> npm cypress -version</li>
         <li>Open cypress (inside your project) --> npx cypress open</li>
@@ -124,7 +124,63 @@
         <li>Implicit validation .should()</li>
         <li>Explicit validation expect().to.equals()</li>
         <img class="display-50P" src="./img/cypress/ImplicitExplicitAssertions.png" alt="validationss.png">
+        <p>
+            <link href="https://docs.cypress.io/guides/references/proxy-configuration" rel="documentation">Cypress proxy
+            configuration
+        </p>
+    </ul>
 
+    <h3>How to set no Proxy</h3>
+    <ul>
+        <li>You can set no proxy configuration if your environment test have a proxy on it</li>
+        <li> <a href="https://docs.cypress.io/guides/references/proxy-configuration">How to set Proxy in cypress
+                documentation page</a></li>
+        <li>set no proxy in console, type: set NO_PROXY: "ProxyDomain"</li>
+        <li> in the package.json file add this array to set no proxy for environments</li>
+        <img class="display-50P" src="./img/cypress/setNoProxy.png" alt="validationss.png">
+    </ul>
+    <h3>Importan cypress documentation</h3>
+    <ul>
+        <li>Cypress ommands task (read data bases and do actions, call logs in test results)<a
+                href="https://docs.cypress.io/api/commands/task">Link</a></li>
+        <li>Example of the cypress.config.js</li>
+        <img class="display-50P" src="./img/cypress/tasks.png" alt="tasks">
+        <li>How to invoke the tasks in cypress test file</li>
+        <img class="display-50P" src="./img/cypress/callTasks.png" alt="tasks">
+        <li>Handy command for inheritance in test cases <a
+                href="https://docs.cypress.io/api/cypress-api/custom-commands">Link</a></li>
+        <li>Cypress ommands task (read data bases and do actions, call logs in test results)<a
+                href="https://docs.cypress.io/api/commands/task">Link</a></li>
+        <li>Example of the cypress.config.js</li>
+        <img class="display-50P" src="./img/cypress/tasks.png" alt="tasks">
+        <li>How to invoke the tasks in cypress test file</li>
+        <img class="display-50P" src="./img/cypress/callTasks.png" alt="tasks">
+        <li>Handy command for inheritance in test cases <a
+                href="https://docs.cypress.io/api/cypress-api/custom-commands">Link</a></li>
+    </ul>
+    <ul>
+    <h3>Add Allure report to a cypress project</h3>
+    <h4>Pre-requiremnets</h4>
+    <li>Node</li>
+    <li>Java 8 +</li>
+    </ul>
+    <ul>
+    <h4>stepts</h4>
+    <li>AllurenDocumentation<a href="https://github.com/Shelex/cypress-allure-plugin">Link</a> </li>
+    <li>type inside cypres project: npm i -D @shelex/cypress-allure-plugin</li>
+    <li>You will see in package.json the allure dependencies installed</li>
+    <li>Inside cypress.config.json add a const for allure also an allure event to e2e</li>
+    <img class="display-50P" src="img/cypress/configAllure.png" alt="allureConfig">
+    <li>in cypress/support/e2e.js add: import '@shelex/cypress-allure-plugin';</li>
+    <img class="display-50P" src="img/cypress/importSupportAllure.png" alt="allureImport">
+    <li>Add a script to run allure in a exwcution</li>
+    <img class="display-50P" src="img/cypress/allureScript.png" alt="allureScript">
+    </ul>
+    <ul>
+        <h3>Mochawesome pluggin</h3>
+        <li>type in the project terminal npm install --save-dev mochawesome </li>
+        <li>To execute the html report, you can create your own script for run in console</li>
+        <img class="display-50P" src="img/cypress/MochaReportExecutiuon.png" alt="MochaExecute">
     </ul>
 </body>
 
