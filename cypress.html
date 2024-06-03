@@ -25,8 +25,20 @@
         <li>type: &#160 npm init and complet the require fields</li>
         <li>Install cypress (inside your project)--> npm install cypress --save-dev</li>
         <li>Check cypress version --> npm cypress -version</li>
+        <li>Execute to open cypres: ./node_modules/.bin/cypress open</li>
         <li>Open cypress (inside your project) --> npx cypress open</li>
         <li>Once cypress is open, select e2e testing, continue</li>
+        <li>add scripts to run in your package.json file</li>
+        <li>"cy.chrome": "cypress run -b chrome --reporter mochawesome --spec 'cypress/e2e/**'",</li>
+        <li>"cy.open": "cypress open"</li>
+        <li>In order to add cucumber:</li>
+        <li>https://github.com/badeball  (plugin owner)</li>
+        <li>type inside your project: npm i -D cypress @bahmutov/cypress-esbuild-preprocessor esbuild</li>
+        <li>also the cucumber pre-procesor:  npm install @badeball/cypress-cucumber-preprocessor</li>
+
+
+
+
         <li>Test cases folder --> e2e</li>
         <li>Cypress test cases extensions --> cy.js</li>
         <li>Check cypress documentation: &#160 <a href="https://docs.cypress.io/guides/overview/why-cypress">Cypress
